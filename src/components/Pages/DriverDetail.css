@@ -1,0 +1,62 @@
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+* {
+  margin: 0 0;
+}
+body {
+  background-color: #f4eadc;
+  padding: 10px 40px;
+}
+
+.wrapperrp {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 1.3fr 5fr 5fr;
+  grid-template-columns: 5fr 4fr;
+  grid-template-areas:
+    " titlerp titlerp"
+    " mapsrp tlcontrol"
+    " tabdetail detailrp";
+  grid-gap: 15px;
+}
+.titlerp {
+  grid-area: titlerp;
+}
+
+.sidebarrp {
+  grid-area: sidebarrp;
+  opacity: 0.75;
+}
+.mapsrp {
+  grid-area: mapsrp;
+}
+.tlcontrol {
+  grid-area: tlcontrol;
+  box-shadow: 0px 4px 5px #555;
+}
+.tlcontrol h1 {
+  color: #222222;
+  padding-left: 10px;
+}
+.tlcontrol h3 {
+  color: #222222;
+  padding-left: 10px;
+}
+.detailrp {
+  grid-area: detailrp;
+  box-shadow: 0px 4px 5px #555;
+}
+.detailrp h1 {
+  color: #222222;
+  padding-left: 10px;
+}
+
+.tabdetail {
+  grid-area: tabdetail;
+  box-shadow: 0px 4px 5px #555;
+  background-color: #efefef;
+}

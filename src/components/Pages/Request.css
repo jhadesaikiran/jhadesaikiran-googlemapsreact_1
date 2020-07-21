@@ -1,0 +1,61 @@
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222222;
+}
+
+* {
+  margin: 0 0;
+}
+
+.wrapperrp {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 5fr 5fr;
+  grid-template-columns: 5fr 4fr;
+  grid-template-areas:
+    " mapsrp tlcontrol"
+    " tabdetail detailrp";
+  grid-gap: 10px;
+}
+.wrapperrp h1 {
+  color: #222222;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+.titlerp {
+  grid-area: titlerp;
+}
+
+.mapsrp {
+  grid-area: mapsrp;
+  box-shadow: 0 0 2px 2px;
+}
+.tlcontrol {
+  grid-area: tlcontrol;
+  box-shadow: 0 0 2px 2px;
+  background-color: #68a7ca;
+}
+.tlcontrol h1 {
+  color: #222222;
+  padding-left: 10px;
+}
+.tlcontrol h3 {
+  color: #222222;
+  padding-left: 10px;
+}
+.detailrp {
+  grid-area: detailrp;
+  box-shadow: 0 0 2px 2px;
+  background-color: #68a7ca;
+}
+.detailrp h1 {
+  color: #222222;
+  padding-left: 10px;
+}
+
+.tabdetail {
+  grid-area: tabdetail;
+  box-shadow: 0px 10px 20px #555;
+  background-color: #68a7ca;
+}
